@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Print and Paint</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #1d1d1f;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            border-bottom: 2px solid #f5f5f7;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #1d1d1f;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #515154;
+        }
+
+        ul, ol {
+            margin-bottom: 15px;
+            margin-left: 20px;
+            color: #515154;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #86868b;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #007aff;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .faq-answer {
+            color: #515154;
+        }
+
+        .highlight {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #007aff;
+        }
+
+        .warning {
+            background-color: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+
+        .contact-box {
+            background-color: #f5f5f7;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .feature-card h4 {
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #f5f5f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Print and Paint Support</h1>
+        <p class="subtitle">Frequently Asked Questions and Help</p>
+
+        <div class="highlight">
+            <p><strong>Quick Start:</strong> Select fun words from categories, tap "Generate Drawing," and watch AI create your unique coloring page! Save it to your gallery and print it out.</p>
+        </div>
+
+        <h2>Getting Started</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I create my first coloring page?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Open the app and make sure you're on the "Words" tab</li>
+                    <li>Tap emoji category buttons to see words (Animals, Actions, Adjectives)</li>
+                    <li>Tap on words you like to select them</li>
+                    <li>When you have 1-3 words selected, tap "Generate Drawing"</li>
+                    <li>Wait a few seconds while AI creates your unique drawing</li>
+                    <li>Your drawing is automatically saved to the Gallery!</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What are the emoji categories?</div>
+            <div class="faq-answer">
+                <p><strong>Free categories:</strong></p>
+                <ul>
+                    <li>🐕 Animals - pets, wild animals, and creatures</li>
+                    <li>⚡ Actions - verbs and activities</li>
+                    <li>✨ Adjectives - describing words</li>
+                </ul>
+                <p><strong>Premium categories (unlocked with upgrade):</strong></p>
+                <ul>
+                    <li>🧚 Magical - fantasy and mythical creatures</li>
+                    <li>😊 Emotions - feelings and expressions</li>
+                    <li>🏰 Places - locations and settings</li>
+                    <li>🎨 Things - objects and items</li>
+                    <li>🚗 Vehicles - transportation</li>
+                    <li>🍎 Food - fruits, snacks, and treats</li>
+                    <li>🎄 Christmas - holiday themed</li>
+                    <li>🎃 Halloween - spooky fun</li>
+                    <li>🐰 Easter - spring and bunny themed</li>
+                    <li>🏴‍☠️ Pirates - adventure on the high seas</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Features</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">What's the difference between Words and Text modes?</div>
+            <div class="faq-answer">
+                <p><strong>Words Mode (Free):</strong> Choose from pre-selected, kid-friendly words organized by emoji categories.</p>
+                <p><strong>Text Mode (Premium):</strong> Type anything you want (up to 100 characters). Perfect for custom ideas like "unicorn flying over rainbow castle."</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I print my drawings?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Go to the Gallery tab</li>
+                    <li>Tap on the drawing you want to print</li>
+                    <li>Tap the Print button (printer icon)</li>
+                    <li>Select your printer and print!</li>
+                </ol>
+                <p>All drawings are optimized with black lines on white background, perfect for any home printer.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I share my drawings?</div>
+            <div class="faq-answer">
+                <p>Sharing is a premium feature. With the premium upgrade, tap the Share button on any drawing to send it via Messages, Mail, AirDrop, or save it to Photos.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How many drawings can I save?</div>
+            <div class="faq-answer">
+                <p>Unlimited! Save as many drawings as you want. All drawings are stored on your device. You can delete any drawing by swiping left or tapping the Delete button.</p>
+            </div>
+        </div>
+
+        <h2>Premium Features</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">What does premium unlock?</div>
+            <div class="faq-answer">
+                <p>Premium is a one-time purchase of $4.99 that unlocks:</p>
+                <ul>
+                    <li>All 13 word categories (10 additional categories)</li>
+                    <li>90+ total words to choose from</li>
+                    <li>Text input mode - type any custom idea</li>
+                    <li>Share functionality for all drawings</li>
+                    <li>Family Sharing - whole family can use premium</li>
+                    <li>All future premium features included</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is premium a subscription?</div>
+            <div class="faq-answer">
+                <p><strong>No!</strong> Premium is a one-time purchase. Pay once ($4.99) and own it forever. No monthly fees, no recurring charges, no hidden costs.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Does premium work with Family Sharing?</div>
+            <div class="faq-answer">
+                <p>Yes! When you purchase premium, all family members in your Apple Family Sharing group can use premium features at no additional cost.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I restore my premium purchase?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Open Print and Paint</li>
+                    <li>Go to Settings or the Premium screen</li>
+                    <li>Tap "Restore Purchases"</li>
+                    <li>Your premium features will be restored automatically</li>
+                </ol>
+                <p>Note: You must use the same Apple ID that made the original purchase.</p>
+            </div>
+        </div>
+
+        <h2>Troubleshooting</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">The app says my device is not supported. Why?</div>
+            <div class="faq-answer">
+                <p>Print and Paint requires:</p>
+                <ul>
+                    <li>iOS 26.0 or later</li>
+                    <li>iPhone or iPad with Apple Intelligence support</li>
+                    <li>Compatible devices: iPhone 15 Pro or later, iPad with M1 chip or later</li>
+                </ul>
+                <p>The app uses Apple's ImagePlayground API which requires these newer devices.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Generation is taking a long time or failing</div>
+            <div class="faq-answer">
+                <p>Try these steps:</p>
+                <ol>
+                    <li>Make sure your device has enough free storage (at least 1GB recommended)</li>
+                    <li>Close other apps running in the background</li>
+                    <li>Restart the app</li>
+                    <li>If it continues, restart your device</li>
+                    <li>Check that you're running iOS 26.0 or later</li>
+                </ol>
+                <p>Note: First generation after app launch may take longer as the AI model loads.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">My drawings look different than I expected</div>
+            <div class="faq-answer">
+                <p>AI generation is creative and unpredictable! Each drawing is unique. If you don't like a result:</p>
+                <ul>
+                    <li>Try different word combinations</li>
+                    <li>Generate multiple times with the same words - you'll get different results</li>
+                    <li>With premium text mode, be more specific in your description</li>
+                    <li>Keep the combinations simple for best results</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">The drawing has gray areas instead of pure black and white</div>
+            <div class="faq-answer">
+                <p>This shouldn't happen - all drawings are processed to be pure black lines on white background. If you see gray areas:</p>
+                <ol>
+                    <li>Make sure you're running the latest version of the app</li>
+                    <li>Try generating the drawing again</li>
+                    <li>If it persists, contact support with a screenshot</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">I can't find the Gallery tab</div>
+            <div class="faq-answer">
+                <p>The Gallery is at the bottom of the screen:</p>
+                <ul>
+                    <li><strong>iPhone:</strong> Tap the "Gallery" tab at the bottom</li>
+                    <li><strong>iPad:</strong> Look for the Gallery in the sidebar or navigation</li>
+                </ul>
+                <p>If you don't see it, make sure you're running the latest version of the app.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Premium purchase isn't working</div>
+            <div class="faq-answer">
+                <p>If you purchased premium but it's not unlocked:</p>
+                <ol>
+                    <li>Tap "Restore Purchases" on the premium screen</li>
+                    <li>Make sure you're signed in with the correct Apple ID</li>
+                    <li>Check your purchase history in App Store settings</li>
+                    <li>Restart the app</li>
+                    <li>If still not working, contact Apple Support for purchase issues</li>
+                </ol>
+            </div>
+        </div>
+
+        <h2>Privacy & Safety</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Is my data private?</div>
+            <div class="faq-answer">
+                <p>Yes! Print and Paint is designed with privacy first:</p>
+                <ul>
+                    <li>All drawings are generated on your device</li>
+                    <li>No data is sent to any servers</li>
+                    <li>We don't collect any personal information</li>
+                    <li>No tracking or analytics</li>
+                    <li>No ads</li>
+                    <li>Works completely offline</li>
+                </ul>
+                <p>See our <a href="privacy-policy.html">Privacy Policy</a> for complete details.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is this app safe for kids?</div>
+            <div class="faq-answer">
+                <p>Yes! Print and Paint is designed specifically for children:</p>
+                <ul>
+                    <li>All word lists are carefully curated for kids</li>
+                    <li>No inappropriate content</li>
+                    <li>No ads or external links</li>
+                    <li>No social features or chat</li>
+                    <li>No personal data collection</li>
+                    <li>Rated 4+ (All Ages) by Apple</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Technical Information</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">What are the system requirements?</div>
+            <div class="faq-answer">
+                <ul>
+                    <li><strong>iOS Version:</strong> iOS 26.0 or later</li>
+                    <li><strong>Compatible iPhones:</strong> iPhone 15 Pro, iPhone 15 Pro Max, iPhone 16 series</li>
+                    <li><strong>Compatible iPads:</strong> iPad Pro (M1 or later), iPad Air (M1 or later)</li>
+                    <li><strong>Storage:</strong> ~50MB for app, plus space for saved drawings</li>
+                    <li><strong>Internet:</strong> Required for initial download, then works offline</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Does this work offline?</div>
+            <div class="faq-answer">
+                <p>Yes! After you download the app, everything works completely offline. The AI runs on your device, so you can generate drawings anywhere - on a plane, in a car, or anywhere without internet.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How does the AI work?</div>
+            <div class="faq-answer">
+                <p>Print and Paint uses Apple's ImagePlayground framework, which runs entirely on your device. The AI model generates unique sketches based on your word selections, then the app processes them into clean black and white line art perfect for coloring.</p>
+            </div>
+        </div>
+
+        <h2>Account & Purchases</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Do I need to create an account?</div>
+            <div class="faq-answer">
+                <p>No! Print and Paint doesn't require any account, login, or personal information. Just download and start creating.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I get a refund?</div>
+            <div class="faq-answer">
+                <p>All purchases are handled by Apple. To request a refund for the premium upgrade:</p>
+                <ol>
+                    <li>Go to <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+                    <li>Sign in with your Apple ID</li>
+                    <li>Find Print and Paint premium purchase</li>
+                    <li>Click "Report a Problem"</li>
+                    <li>Follow the prompts to request a refund</li>
+                </ol>
+                <p>Apple handles all refund decisions according to their policies.</p>
+            </div>
+        </div>
+
+        <h2>Tips & Tricks</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I get the best results?</div>
+            <div class="faq-answer">
+                <ul>
+                    <li>Start with 2-3 words for good combinations</li>
+                    <li>Mix categories - try an animal + action + adjective</li>
+                    <li>Keep it simple for younger kids</li>
+                    <li>Generate multiple times if you want variations</li>
+                    <li>With premium text mode, be descriptive but concise</li>
+                    <li>Remember: each generation is unique, even with the same words!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I print on different paper sizes?</div>
+            <div class="faq-answer">
+                <p>Yes! When you tap Print, your device's print dialog lets you choose paper size, orientation, and other print settings. The drawings scale to fit your chosen size.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is there an Easter egg?</div>
+            <div class="faq-answer">
+                <p>Maybe! 😉 Premium text mode users might discover something colorful if they experiment...</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h2>Still Need Help?</h2>
+            <p>We're here to help! If you didn't find your answer above, please contact us:</p>
+            <p><strong>Email:</strong> <a href="mailto:tixbai@icloud.com">tixbai@icloud.com</a></p>
+            <p><strong>Privacy Policy:</strong> <a href="privacy-policy.html">View Privacy Policy</a></p>
+            <p style="margin-top: 20px; color: #86868b; font-size: 0.9em;">
+                We typically respond within 24-48 hours. Please include details about your device and iOS version when reporting issues.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
